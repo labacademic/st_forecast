@@ -61,12 +61,14 @@ st.sidebar.header("Modelo Holt-Winters")
 trend = st.sidebar.selectbox(
     "Tendencia",
     [None, "add", "mul"],
+    index=1,
     format_func=lambda x: "Sin tendencia" if x is None else x
 )
 
 seasonal = st.sidebar.selectbox(
     "Estacionalidad",
     [None, "add", "mul"],
+    index=1,
     format_func=lambda x: "Sin estacionalidad" if x is None else x
 )
 

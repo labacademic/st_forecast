@@ -75,7 +75,7 @@ seasonal = st.sidebar.selectbox(
 seasonal_periods = st.sidebar.number_input(
     "Periodo estacional",
     min_value=2,
-    max_value=max(2, len(serie) // 2),
+    max_value=52,
     value=min(4, max(2, len(serie) // 2)),
     step=1
 )
